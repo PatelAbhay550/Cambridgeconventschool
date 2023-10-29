@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/images/header-logo1.jpg"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambridge Convent School</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+
+        if (window.scrollY > 0) {
+          // Add box shadow when the user scrolls down
+          navbar.style.boxShadow = "0px 2px 6px rgba(0, 0, 0, 0.41)";
+        } else {
+          // Remove box shadow when the user is at the top of the page
+          navbar.style.boxShadow = "none";
+        }
+      });
+      ``;
+    </script>
+  </body>
+</html>
